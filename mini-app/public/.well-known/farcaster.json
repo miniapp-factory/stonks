@@ -1,0 +1,14 @@
+{
+  "name": "PancakeSwap Lottery Mini App",
+  "description": "A Farcaster Mini App that lets users buy tickets and win a share of the pot.",
+  "url": "${url}",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "type": "frame",
+  "frameVersion": "v2"
+}

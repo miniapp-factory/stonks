@@ -4,6 +4,7 @@ import "./globals.css";
 import { MiniAppProvider } from "@/components/context/miniapp-provider";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import Providers from "@/app/providers";
 import { description, title } from "@/lib/metadata";
 
 const inter = localFont({
@@ -23,8 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
-        <MiniAppProvider>
-          <div className="font-sans min-h-screen flex flex-col place-content-between gap-2">
+        <script src="https://cdn.farcaster.com/sdk.js" onload="sdk.actions.ready()"></script>
+        <Providers>
+          <MiniAppProvider>
+            <div className="font-sans min-h-screen flex flex-col place-content-between gap-2">
             <Header />
             {children}
             <Footer />

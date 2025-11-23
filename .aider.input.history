@@ -1,0 +1,146 @@
+
+# 2025-11-23 13:50:01.602961
++Code the following app
++```
++Role: Act as a Senior Web3 Full-Stack Engineer specializing in Farcaster Mini Apps (Frames v2), Solidity, and Next.js.
++
++Objective: Code a functional Farcaster Mini App that mimics the functionality of the PancakeSwap Lottery. The app consists of a Solidity Smart Contract (deployed on Base) and a Next.js frontend that runs inside the Farcaster client.
++
++Tech Stack:
++
++Smart Contract: Solidity ^0.8.20 (Hardhat environment).
++
++Frontend: Next.js 14 (App Router), Tailwind CSS, Lucide React.
++
++Web3 Integration: Wagmi v2, Viem, and Tanstack Query.
++
++Farcaster: @farcaster/frame-sdk for identity and context.
++
++Project Requirements:
++
++Part 1: The Smart Contract (Lottery.sol) Create a contract optimized for the Base L2 network.
++
++Variables: ticketPrice (set to 0.001 ETH), lotteryId, players array, history mapping.
++
++Functions:
++
++buyTicket(): Accepts ETH. Rejects if value is incorrect. Adds sender to array.
++
++drawWinner(): (For this MVP, use block.prevrandao or a simplified pseudo-random generator to avoid complex Chainlink setup). Selects a random index from players, transfers 90% of balance to winner, keeps 10% in contract as fee/rollover. Resets the array.
++
++getPotBalance(): Returns current contract balance.
++
++getPlayers(): Returns list of current participants.
++
++Part 2: The Mini App Frontend Create a mobile-first, responsive UI that looks similar to PancakeSwap (playful, rounded, colorful).
++
++File Structure: Please provide the code for:
++
++app/page.tsx (Main UI).
++
++app/providers.tsx (Wagmi + Query Client setup).
++
++app/layout.tsx (Including the Farcaster SDK script).
++
++public/.well-known/farcaster.json (The manifest file).
++
++Key Features:
++
++SDK Initialization: Use sdk.actions.ready() on load.
++
++UI State: Show the current "Pot Size" (read from contract).
++
++Action: A large "Buy Ticket" button.
++
++Feedback: Show a loading spinner during transaction and a "Success" confetti animation when the ticket is bought.
++
++Wallet: Assume the user is using the Farcaster-injected wallet or a standard connector via Wagmi.
++
++Output Instructions:
++
++Provide the full Solidity code for the contract.
++
++Provide the Install Command (npm install ...) for all necessary frontend dependencies.
++
++Provide the Full Code for the Next.js files listed above.
++
++Ensure the code handles the window.ethereum injection correctly for Farcaster mobile users.
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-11-23 13:50:01.603880
++Code the following app
++```
++Role: Act as a Senior Web3 Full-Stack Engineer specializing in Farcaster Mini Apps (Frames v2), Solidity, and Next.js.
++
++Objective: Code a functional Farcaster Mini App that mimics the functionality of the PancakeSwap Lottery. The app consists of a Solidity Smart Contract (deployed on Base) and a Next.js frontend that runs inside the Farcaster client.
++
++Tech Stack:
++
++Smart Contract: Solidity ^0.8.20 (Hardhat environment).
++
++Frontend: Next.js 14 (App Router), Tailwind CSS, Lucide React.
++
++Web3 Integration: Wagmi v2, Viem, and Tanstack Query.
++
++Farcaster: @farcaster/frame-sdk for identity and context.
++
++Project Requirements:
++
++Part 1: The Smart Contract (Lottery.sol) Create a contract optimized for the Base L2 network.
++
++Variables: ticketPrice (set to 0.001 ETH), lotteryId, players array, history mapping.
++
++Functions:
++
++buyTicket(): Accepts ETH. Rejects if value is incorrect. Adds sender to array.
++
++drawWinner(): (For this MVP, use block.prevrandao or a simplified pseudo-random generator to avoid complex Chainlink setup). Selects a random index from players, transfers 90% of balance to winner, keeps 10% in contract as fee/rollover. Resets the array.
++
++getPotBalance(): Returns current contract balance.
++
++getPlayers(): Returns list of current participants.
++
++Part 2: The Mini App Frontend Create a mobile-first, responsive UI that looks similar to PancakeSwap (playful, rounded, colorful).
++
++File Structure: Please provide the code for:
++
++app/page.tsx (Main UI).
++
++app/providers.tsx (Wagmi + Query Client setup).
++
++app/layout.tsx (Including the Farcaster SDK script).
++
++public/.well-known/farcaster.json (The manifest file).
++
++Key Features:
++
++SDK Initialization: Use sdk.actions.ready() on load.
++
++UI State: Show the current "Pot Size" (read from contract).
++
++Action: A large "Buy Ticket" button.
++
++Feedback: Show a loading spinner during transaction and a "Success" confetti animation when the ticket is bought.
++
++Wallet: Assume the user is using the Farcaster-injected wallet or a standard connector via Wagmi.
++
++Output Instructions:
++
++Provide the full Solidity code for the contract.
++
++Provide the Install Command (npm install ...) for all necessary frontend dependencies.
++
++Provide the Full Code for the Next.js files listed above.
++
++Ensure the code handles the window.ethereum injection correctly for Farcaster mobile users.
++```
++
++Generate an app logo and update the app metadata title and description.
+
+# 2025-11-23 13:50:47.048913
++apply changes
+
+# 2025-11-23 13:50:47.049196
++apply changes

@@ -28,11 +28,12 @@ export default function RootLayout({
         <Providers>
           <MiniAppProvider>
             <div className="font-sans min-h-screen flex flex-col place-content-between gap-2">
-            <Header />
-            {children}
-            <Footer />
-          </div>
-        </MiniAppProvider>
+              <Header />
+              {children}
+              <Footer />
+            </div>
+          </MiniAppProvider>
+        </Providers>
       </body>
     </html>
   );
